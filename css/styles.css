@@ -66,9 +66,9 @@ img {
 }
 .container {
   max-width: 1158px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 .portfolio-section {
@@ -93,16 +93,15 @@ img {
 }
 
 /* HEADER */
-header {
+.header {
   border-bottom: 1px solid var(--accent);
 }
 .nav-container {
   display: flex;
-
-  padding: 24px 0;
 }
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -123,10 +122,14 @@ header {
 }
 .nav-list {
   display: flex;
+  gap: 40px;
 }
-.nav-list-item:not(:last-child) {
+.nav-list-item {
+  padding: 24px 0;
+}
+/* .nav-list-item:not(:last-child) {
   margin-right: 40px;
-}
+}  */
 .footer-logo {
   color: var(--light-accent);
 }
@@ -150,6 +153,9 @@ header {
   display: flex;
   gap: 40px;
 }
+.contacts-list > li {
+  padding: 24px 0;
+}
 .contacts-link {
   color: var(--text-primary);
 }
@@ -164,7 +170,7 @@ header {
   padding: 188px 0;
 }
 .page-title {
-  width: 496px;
+  max-width: 496px;
   text-align: center;
   font-size: 56px;
   font-weight: 700;
@@ -177,6 +183,7 @@ header {
   margin-bottom: 48px;
 }
 .hero-btn {
+  min-width: 169px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -201,8 +208,7 @@ header {
 }
 /* ADVANTAGES */
 .advantages-section {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding: 120px 0;
 }
 .section-title {
   font-size: 36px;
@@ -240,6 +246,9 @@ header {
   padding-top: 60px;
   padding-bottom: 120px;
 }
+.our-work-item {
+  width: calc((100% - 48px) / 3);
+}
 /* OUR TEAM */
 .our-team-section {
   background-color: var(--light-accent);
@@ -248,15 +257,12 @@ header {
 }
 .team-card {
   background-color: var(--white-background);
+  border-radius: 0px 0px 4px 4px;
 }
-.team-photo {
-  margin-bottom: 32px;
-}
+
 .teamcard-info {
   text-align: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 /* ---------PORTFOLIO------------ */
 .filter-list {
@@ -309,8 +315,7 @@ header {
 /* FOOTER */
 .footer {
   background-color: var(--dark-accent);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   padding-left: 156px;
 }
 .footer-info {
@@ -326,4 +331,5 @@ header {
 }
 .footer-text {
   color: var(--light-accent);
+  max-width: 264px;
 }
