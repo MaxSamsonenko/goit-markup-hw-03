@@ -38,8 +38,7 @@ p {
   margin-bottom: 0;
 }
 
-ul,
-ol {
+ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -296,15 +295,22 @@ header {
 }
 .project-card {
   width: calc((100% - 2 * 24px) / 3);
-  border: 1px solid var(--accent);
-  padding-bottom: 32px;
+
+  /* padding-bottom: 32px; */
 }
 .project-card-img {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .project-card-info {
-  padding-left: 16px;
-  padding-right: 16px;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+
+  border-right-color: var(--accent);
+  border-left-color: var(--accent);
+  border-bottom-color: var(--accent);
+
+  padding: 32px 16px;
 }
 /* FOOTER */
 .footer {
